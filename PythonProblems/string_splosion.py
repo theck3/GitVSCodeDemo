@@ -3,5 +3,11 @@
 # Author: theck3   
 
 def string_splosion(str):
-    new_str = ''
-    
+    result = ''
+
+    # for each char in the range of 0 to length of string, new string = new string + passed string up until chars+1
+
+    for chars in range(len(str)):
+        result = result + str[:chars+1]
+
+    return result
